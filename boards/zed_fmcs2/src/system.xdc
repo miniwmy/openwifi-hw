@@ -38,6 +38,14 @@ set_false_path -through [get_pins {i_system_wrapper/system_i/openwifi_ip/tx_intf
 # set_false_path -through [get_pins {i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/xpm_cdc_array_single_inst_ant_flag/syncstages_ff_reg[3][0]/Q}]
 # set_false_path -through [get_pins {i_system_wrapper/system_i/openwifi_ip/tx_intf_0/inst/dac_intf_i/xpm_cdc_array_single_inst_ant_flag/syncstages_ff_reg[3][0]/R}]
 
+
+connect_debug_port u_ila_0/clk [get_nets [list u_ila_0_FCLK_CLK2]]
+connect_debug_port dbg_hub/clk [get_nets u_ila_0_FCLK_CLK2]
+
+
+connect_debug_port u_ila_0/clk [get_nets [list u_ila_0_FCLK_CLK2]]
+connect_debug_port dbg_hub/clk [get_nets u_ila_0_FCLK_CLK2]
+
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]

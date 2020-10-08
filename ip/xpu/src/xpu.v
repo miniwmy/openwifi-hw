@@ -50,7 +50,10 @@
 		input  wire [15:0] byte_count,
         input  wire fcs_in_strobe,
 		input  wire fcs_ok,
-
+		
+        // Ports to ftm_filter
+		output wire [7:0] led,
+		
         // Ports to phy_tx
         input  wire phy_tx_started,
         input  wire phy_tx_done,
@@ -496,7 +499,23 @@
         .src_addr(addr4),
         .src_addr_valid(addr4_valid)
     );
-
+    
+    ftm_filter # (
+    ) ftm_filter_i (
+        .clk(s00_axi_aclk),
+        .rstn(s00_axi_aresetn&(~slv_reg0[3])),
+        
+        .ofdm_byte_index(byte_count),
+        .ofdm_byte(byte_in),
+        .ofdm_byte_valid(byte_in_strobe),
+        
+        .FC_type(FC_type),
+        .FC_subtype(FC_subtype),
+        .FC_DI_valid(FC_DI_valid),
+        
+        .led(led)
+    );
+    
     rssi # (
         .GPIO_STATUS_WIDTH(GPIO_STATUS_WIDTH),
         .DELAY_CTL_WIDTH(DELAY_CTL_WIDTH),
