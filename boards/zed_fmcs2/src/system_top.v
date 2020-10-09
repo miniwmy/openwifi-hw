@@ -152,7 +152,7 @@ module system_top (
   assign gpio_i[63:51] = gpio_o[63:51];
   assign gpio_i[48:47] = gpio_o[48:47];
   assign gpio_bd[31:27] = gpio_bd_t[31:27];
-  assign gpio_bd[26:19] = gpio_bd_t[26:19]|led_0[7:0]|8'b11111111;
+  assign gpio_bd[26:19] = gpio_bd_t[26:19]|led_0[7:0];
   assign gpio_bd[18:0] = gpio_bd_t[18:0];
 
    ad_iobuf #(.DATA_WIDTH(2)) i_iobuf_iic_scl (
