@@ -56,6 +56,7 @@ module system_wrapper
     iic_mux_sda_i,
     iic_mux_sda_o,
     iic_mux_sda_t,
+    led_0,
     otg_vbusoc,
     rx_clk_in_n,
     rx_clk_in_p,
@@ -138,6 +139,7 @@ module system_wrapper
   input [1:0]iic_mux_sda_i;
   output [1:0]iic_mux_sda_o;
   output iic_mux_sda_t;
+  output [7:0]led_0;
   input otg_vbusoc;
   input rx_clk_in_n;
   input rx_clk_in_p;
@@ -226,6 +228,7 @@ module system_wrapper
   wire [1:0]iic_mux_sda_i;
   wire [1:0]iic_mux_sda_o;
   wire iic_mux_sda_t;
+  wire [7:0]led_0;
   wire otg_vbusoc;
   wire rx_clk_in_n;
   wire rx_clk_in_p;
@@ -324,6 +327,7 @@ module system_wrapper
         .iic_mux_sda_i(iic_mux_sda_i),
         .iic_mux_sda_o(iic_mux_sda_o),
         .iic_mux_sda_t(iic_mux_sda_t),
+        .led_0(led_0),
         .otg_vbusoc(otg_vbusoc),
         .rx_clk_in_n(rx_clk_in_n),
         .rx_clk_in_p(rx_clk_in_p),

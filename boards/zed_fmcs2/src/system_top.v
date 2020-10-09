@@ -131,6 +131,8 @@ module system_top (
   wire    [ 1:0]  iic_mux_sda_o_s;
   wire            iic_mux_sda_t_s;
   wire    [7:0]   gpio_status_dummy;
+  wire    [7:0]   led_0;
+  wire    [31:0]  gpio_bd_t;
 
   // instantiations
 
@@ -145,10 +147,13 @@ module system_top (
               gpio_en_agc,
               gpio_ctl,
               gpio_status_dummy,
-              gpio_bd}));
+              gpio_bd_t}));
 
   assign gpio_i[63:51] = gpio_o[63:51];
   assign gpio_i[48:47] = gpio_o[48:47];
+  assign gpio_bd[31:27] = gpio_bd_t[31:27];
+  assign gpio_bd[26:19] = gpio_bd_t[26:19]|led_0[7:0];
+  assign gpio_bd[18:0] = gpio_bd_t[18:0];
 
    ad_iobuf #(.DATA_WIDTH(2)) i_iobuf_iic_scl (
     .dio_t ({iic_mux_scl_t_s,iic_mux_scl_t_s}),
@@ -206,6 +211,7 @@ module system_top (
     .iic_mux_sda_i (iic_mux_sda_i_s),
     .iic_mux_sda_o (iic_mux_sda_o_s),
     .iic_mux_sda_t (iic_mux_sda_t_s),
+    .led_0 (led_0),
     .otg_vbusoc (otg_vbusoc),
     .rx_clk_in_n (rx_clk_in_n),
     .rx_clk_in_p (rx_clk_in_p),
