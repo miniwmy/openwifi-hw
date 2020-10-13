@@ -248,7 +248,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c0f789aa</spirit:value>
+            <spirit:value>876aa6d0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -270,7 +270,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c0f789aa</spirit:value>
+            <spirit:value>876aa6d0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1418,13 +1418,13 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/board_def.v</spirit:name>
+        <spirit:name>src/clock_speed.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/clock_speed.v</spirit:name>
+        <spirit:name>src/board_def.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
@@ -1569,13 +1569,13 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/board_def.v</spirit:name>
+        <spirit:name>src/clock_speed.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/clock_speed.v</spirit:name>
+        <spirit:name>src/board_def.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
@@ -1818,20 +1818,20 @@
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-10-12T13:21:09Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-10-13T07:45:32Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@9b49e9a_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2458bc8_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ddd91b6_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b868de6_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df205e5_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67ec3cfa_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1affb652_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b52e5e6_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c120949_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7852f767_ARCHIVE_LOCATION">/home/test/openwifi/openwifi-hw/ip_repo/low/xpu</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9add38af"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="871c369d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b9e3f75e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="bd85f509"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="657a211d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="8af0eff1"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="542ed757"/>
