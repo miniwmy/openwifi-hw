@@ -289,7 +289,7 @@
     assign FC_order =           FC_DI[15];
     assign duration  =          FC_DI[31:16];
     
-    assign led[7:6] = 2'b11;
+    assign led[7] = 1'b1;
     // assign slv_reg35 = addr1[31:0];
     // assign slv_reg36 = addr1[47:32];
         
@@ -514,7 +514,7 @@
         .FC_subtype(FC_subtype),
         .FC_DI_valid(FC_DI_valid),
         
-        .led(led[5:0])
+        .led(led[6:0])
     );
     
     rssi # (
